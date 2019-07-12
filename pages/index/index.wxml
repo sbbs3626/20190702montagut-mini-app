@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index-bg">
+   过七夕你配吗？
+  </view>
+  <view class="btn-start">
+    <button type="primary" bindtap="start">开始</button>
+  </view>
+</view>

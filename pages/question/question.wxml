@@ -1,0 +1,20 @@
+<!--pages/question/question.wxml-->
+<view class="container">
+<view class="question">
+  <view class="title">
+   Q1：
+  </view>
+  <view class="img">
+   <cover-image src="http://placehold.it/300x200"></cover-image>
+  </view>
+  <view class="list">
+      <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
+          <view class="navigator-text">{{page}}</view>
+          <view class="navigator-arrow"></view>
+      </block>
+  </view>
+</view>
+  <view class="btn-start">
+    <button type="primary" bindtap="next">下一步</button>
+  </view>
+</view>
