@@ -1,10 +1,39 @@
 /**app.wxss**/
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1293866_67sdx9zgfzo.eot?t=1563109253579');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_1293866_67sdx9zgfzo.eot?t=1563109253579#iefix') format('embedded-opentype'),
+         /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALgAAsAAAAABnwAAAKSAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBBIEpATYCJAMICwYABCAFhG0HMxvSBci+IRqH5ytsWFKUnnTsc7hUMNHbYGWbVWd88Xue0YiH7/f7/drnHlSTaqSLaCQUpltIJEiEBKVZKITCvI5+67o1VTljEaTj2TBoTbSxh97e8umVLh6GC1ABLCxsAasbXMO8yAYLDOSLdDWADNAy2ICDJcZJFwvEdoPLw0y3BSbYYZmoGiDAzHyTRMnXywGC/7rir+/9Iuj1iXunfxRQIPOdd7nMMWnSvwDjQAp0D4wiK5LIG8YueIGPCVTr0uXMr48XaMnsVYE4iUMXWoW4LLNSpVDecDCLa6kyXaZn4Cr6fnzBICkr2B3bWwUwfTsV/K8NCAkI6HgZCkwAmdhvzG+qCsapqs7X9IFjtQavfOAUR7UJ9tfZzbWgA8qfSeEpH1U0gcx0hoD1SVdR1NXVXvz8AbkvHdpHSKRFKZRCZogNPfrld58ffu9rMpVCzX2ls19aWxknavXuZLQStuJulVLg7F3Jt6DGiST8pVIE8H9XrICD4CY/rhpm8OI8afT/YVgQVJ4oEPwwxUBGNlS2I2VN0VhOhlRvpKtaNf6Dw83+pprb7s4bKgsKhqRCJwqVBsjMnkCZGpMoV2kK1cZtjtdoIaoiV2HMEyA0+kRS7wmFRt9kZv+iTLt/lGssqHaYLqwx1Dot5CoF6L1j7HNhXJd24tYThY/Mlbwq4t5IbJzCUX9YLm2oIFlii30Jx6oGjXCOa/AcZRljKZyQr/1ItZwMBqbpTX2fc+iYI4hLkQDyvEMxHyuYYLzqVD5/QkIPGZd0DNXFb4iw4tnRSN9wALnRF4OGHuUV60VoTCkDGYLl0BrMI5kMQ2XzvATxqb5oQrY0MXBGmaH6/vbG/O9OQDXbksLZUag6fbjFR8RFCAAAAA==') format('woff2'),
+         url('//at.alicdn.com/t/font_1293866_67sdx9zgfzo.woff?t=1563109253579') format('woff'),
+         url('//at.alicdn.com/t/font_1293866_67sdx9zgfzo.ttf?t=1563109253579') format('truetype'),
+         /* chrome,
+         firefox,
+         opera,
+         Safari,
+         Android,
+         iOS 4.2+ */ url('//at.alicdn.com/t/font_1293866_67sdx9zgfzo.svg?t=1563109253579#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xuanzhong:before {
+  content: "\e624";
+}

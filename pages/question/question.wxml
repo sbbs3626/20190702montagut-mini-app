@@ -1,20 +1,29 @@
 <!--pages/question/question.wxml-->
 <view class="container">
-<view class="question">
-  <view class="title">
-   Q1：
-  </view>
-  <view class="img">
-   <cover-image src="http://placehold.it/300x200"></cover-image>
-  </view>
-  <view class="list">
-      <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*item">
-          <view class="navigator-text">{{page}}</view>
-          <view class="navigator-arrow"></view>
-      </block>
-  </view>
-</view>
-  <view class="btn-start">
-    <button type="primary" bindtap="next">下一步</button>
-  </view>
+  <swiper class="swiper" interval="5000" duration="1000">
+    <block wx:for="{{questionList}}" wx:key="{{questionList.length}}">
+      <swiper-item>
+        <view class="question">
+          <view class="title">
+            Q{{index+1}}：{{item.title}}
+          </view>
+          <view class="img">
+            <cover-image src="{{item.img}}"></cover-image>
+          </view>
+          <view class="list">
+            <block wx:for="{{item.list}}" wx:for-item="page"  wx:for-index="i" wx:key="*item">
+              <view class="item" bindtap="_select" id="{{item.id}}" data-val="{{i}}" data-index="{{index}}">
+                <view class="navigator-text">{{page.text}}</view>
+                <view wx:if="{{isSelect[index].val==i}}" class="iconfont icon-xuanzhong"></view>
+              </view>
+            </block>
+          </view>
+
+          <button class="next" type="primary" bindtap="_next">下一步</button>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
 </view>

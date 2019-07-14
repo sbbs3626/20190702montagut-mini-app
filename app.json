@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/question/question",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/question/question"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

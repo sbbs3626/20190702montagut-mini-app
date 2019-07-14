@@ -1,0 +1,27 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "lodash": "^4.17.14"
+  },
+  "name": "20190702montagut-mini-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbbs3626/20190702montagut-mini-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbbs3626/20190702montagut-mini-app/issues"
+  },
+  "homepage": "https://github.com/sbbs3626/20190702montagut-mini-app#readme",
+  "devDependencies": {
+    "wxapp-lodash": "^1.0.1"
+  },
+  "description": ""
+}
