@@ -2,7 +2,7 @@
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
-    "lodash": "^4.17.14"
+    "lodash": "^4.17.19"
   },
   "name": "20190702montagut-mini-app",
   "version": "1.0.0",
